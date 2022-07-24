@@ -1,3 +1,11 @@
+#day2
+####thi is solution for ex:1
+
+
+
+
+
+
 create table if not exists faculty (
 	id serial primary key ,
   	name varchar(40) NOT NULL default 'hello'
@@ -96,3 +104,15 @@ create table if not exists course_enrollment (
 	student_id int references student (id)
 
 );	
+
+
+#####this is solution  of ex :2 
+### link ex 2.1 : https://pgexercises.com/questions/basic/selectall.html
+solution select * from cd.facilities;
+
+### link ex 2.2 : https://pgexercises.com/questions/basic/selectspecific.html
+solution  select name, membercost from cd.facilities;
+
+### link ex 2.2 : https://pgexercises.com/questions/basic/where.html
+ solution select facid, name, membercost, guestcost, initialoutlay, monthlymaintenance from cd.facilities where membercost>0;
+
