@@ -30,7 +30,8 @@ rollback;
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Return to the first session Start a new transaction :
-```sql begin;
+```sql
+begin;
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Insert a new record into the Professor table :
@@ -41,7 +42,8 @@ insert into student  (name,age,address,phone,image,birth_date,course_id,address_
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Commit the transaction :
-```sql commit;
+```sql
+commit;
 ```
 ________________________________________________________________________________________________________________________________________________________
 ### Select Subject id, Subject Name, Subject Code, Course Duration in One Query :
@@ -72,5 +74,4 @@ ________________________________________________________________________________
   
 ### link : https://pgexercises.com/questions/joins/simplejoin2.html
    solution : ```sql 
-   select cd.bookings.starttime ,cd.facilities.name from cd.bookings inner join cd.facilities on cd.facilities.facid=cd.bookings.facid where   cd.facilities.name like '%Tennis Court %' and cd.bookings.starttime >= '2012-09-21' and cd.bookings.starttime < '2012-09-22'  order by cd.bookings.starttime;
-```
+   select cd.bookings.starttime ,cd.facilities.name from cd.bookings inner join cd.facilities on cd.facilities.facid=cd.bookings.facid where   cd.facilities.name like '%Tennis Court %' and cd.bookings.starttime >= '2012-09-21' and cd.bookings.starttime < '2012-09-22'  order by cd.bookings.starttime; ```
