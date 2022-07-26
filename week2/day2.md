@@ -4,11 +4,13 @@
 ### creating tables of college_management_system database
 
 create table if not exists faculty (
+
 	id serial primary key ,
   	name varchar(40) NOT NULL default 'hello'
 );
-create table if not exists student 
-	(
+
+create table if not exists student (
+	
 	id serial primary key ,
   	name varchar(40) NOT NULL default 'hello',
 	age int NOT NULL ,
@@ -21,6 +23,7 @@ create table if not exists student
 	address_id int not null ,
 	foreign key (address_id) references address (id)	
 ) ; 
+
 create table if not exists professor (
 
     id serial primary key ,
@@ -43,6 +46,7 @@ create table if not exists department (
 );
 		
 create table if not exists address (
+
 	id serial primary key ,
   	city varchar(50) NOT NULL default'city',
 	governate varchar(50) NOT NULL default'city',
@@ -51,7 +55,9 @@ create table if not exists address (
 	student_id int not null ,
 	foreign key (student_id) references student (id)
 );
+
 create table if not exists subject (
+
 	id serial primary key ,
   	name varchar(40) NOT NULL default 'hello',
 	code int NOT NULL unique,
@@ -61,38 +67,36 @@ create table if not exists subject (
 );	
 	
 create table if not exists course (
+
 	id serial primary key ,
   	duration int NOT NULL,
 	student_id int not null ,
 	foreign key (student_id) references student (id),
 	subject_id int not null ,
-	foreign key (subject_id) references subject (id)
-	
+	foreign key (subject_id) references subject (id)	
 );
 
-	
 create table if not exists exams (
+
 	id serial primary key ,
 	duration int NOT NULL ,
 	time int NOT NULL  ,
 	date varchar(20) NOT NULL ,
 	course_id int references Course (id)
-
-
 );		
 	
 create table if not exists student_address (
+
     id serial primary key , 
 	student_id int references student (id),
 	address_id int references address (id)
-
 );	
 
 create table if not exists course_enrollment (
+
     id serial primary key , 
 	course_id int references course (id),
 	student_id int references student (id)
-
 );	
 
 ________________________________________________________________________________________________________________________________________________________
