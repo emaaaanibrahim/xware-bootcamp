@@ -1,5 +1,5 @@
 # Exercise 1
-Try To Normalize Student, Professor Table in College Management System. How de we do that? 
+### Try To Normalize Student, Professor Table in College Management System. How de we do that? 
 
 create table grade_student (
 
@@ -9,15 +9,17 @@ create table grade_student (
    student_id int references student(id) 
 );
 
+```sql
 insert into grade_student (age,birth_date,student_id)values(20,14,1),(7,20,6),(10,20,7);
-
+```
+```
 select * from grade_student;
 id | age | birth_date | student_id 
 ----+-----+------------+------------
   1 | 20  |         14 |          1
   2 | 7   |         20 |          6
   3 | 10  |         20 |          7
-
+```
 
 
 select * from student;
