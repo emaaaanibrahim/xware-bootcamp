@@ -174,10 +174,12 @@ create table person (
 );
 
 create table address (
+
    id serial primary key ,
    city varchar(50)  ,
    state varchar (50) ,
    person_id int references person(id) 
+
 );
 
 ``sql
