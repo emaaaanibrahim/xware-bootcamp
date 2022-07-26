@@ -4,7 +4,8 @@ begin;
 ```
 ________________________________________________________________________________________________________________________________________________________
 ### Insert a new record into the Professor table :
-```sql insert into professor  (name,age,image,faculty_id,department_id)  values ('soad',30,bytea('/home/eman/Templates'),1,2);
+```sql 
+insert into professor  (name,age,image,faculty_id,department_id)  values ('soad',30,bytea('/home/eman/Templates'),1,2); 
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Insert a new record into the Student table :
@@ -12,16 +13,19 @@ ________________________________________________________________________________
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Select all the Professors and students :
-```sql select * from professor;
+```sql
+select * from professor;
 select * from student;
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Return to the first session and delete the Professors with the salary greater than 20000 :
-```sql delete from professor where salary > 2000;
+```sql 
+delete from professor where salary > 2000;
 ```
 _________________________________________________________________________________________________________________________________________________________
 Return to the first session and rollback the transaction :
-```sql rollback; 
+```sql
+rollback; 
 ```
 _________________________________________________________________________________________________________________________________________________________
 ### Return to the first session Start a new transaction :
