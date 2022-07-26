@@ -1,9 +1,5 @@
-#day2
-####thi is solution for ex:1
-
-
-
-
+# day2
+#### thi is solution for ex:1
 
 
 create table if not exists faculty (
@@ -85,11 +81,7 @@ create table if not exists exams (
 	course_id int references Course (id)
 
 
-  	
-);	
-		
-	
-	
+);		
 	
 create table if not exists student_address (
     id serial primary key , 
@@ -105,8 +97,9 @@ create table if not exists course_enrollment (
 
 );	
 
+________________________________________________________________________________________________________________________________________________________
+##### this is solution  of ex :2 :
 
-#####this is solution  of ex :2 
 ### link : https://pgexercises.com/questions/basic/selectall.html
 solution select * from cd.facilities;
 
@@ -114,10 +107,11 @@ solution select * from cd.facilities;
 solution  select name, membercost from cd.facilities;
 
 ### link  : https://pgexercises.com/questions/basic/where.html
- solution select facid, name, membercost, guestcost, initialoutlay, monthlymaintenance from cd.facilities where membercost>0;
+solution select facid, name, membercost, guestcost, initialoutlay, monthlymaintenance from cd.facilities where membercost>0;
  
- ### link : https://pgexercises.com/questions/basic/where4.html
- solution select * from cd.facilities where facid in (1,5);  
+### link : https://pgexercises.com/questions/basic/where4.html
+solution select * from cd.facilities where facid in (1,5);  
+
 ### link : https://pgexercises.com/questions/basic/date.html
 solution : select memid, surname, firstname, joindate from cd.members where joindate > '2012-08-29';
 
