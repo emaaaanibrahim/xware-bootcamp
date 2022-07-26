@@ -1,13 +1,16 @@
 # Exercise 1
 ### Try To Normalize Student, Professor Table in College Management System. How de we do that? 
 
-create table grade_student(
+create table grade_student (
 
    id serial primary key ,
    age varchar(50)  ,
    birth_date int  ,
    student_id int references student(id) 
+
 );
+
+
 
 ```sql
 insert into grade_student (age,birth_date,student_id)values(20,14,1),(7,20,6),(10,20,7);
@@ -73,7 +76,9 @@ create table retired_professor (
    id serial primary key ,
    age varchar(50)  ,
    professor_id int references professor(id) 
+
 );
+
 
 
 ```sql
@@ -117,7 +122,7 @@ id | age | professor_id
 alter table professor  drop column age ; 
 ```
 
-``sql
+```sql
 select * from professor;
 ```
 
