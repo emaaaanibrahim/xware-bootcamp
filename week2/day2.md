@@ -1,6 +1,7 @@
 # day2
-#### thi is solution for ex:1
 
+## this is solution for ex:1
+### creating tables of college_management_system database
 
 create table if not exists faculty (
 	id serial primary key ,
@@ -39,11 +40,8 @@ create table if not exists department (
 	name varchar (50) not null default 'hello', 
     faculty_id int not null ,
 	foreign key (faculty_id) references faculty (id)
-
-
 );
-	
-	
+		
 create table if not exists address (
 	id serial primary key ,
   	city varchar(50) NOT NULL default'city',
@@ -98,7 +96,7 @@ create table if not exists course_enrollment (
 );	
 
 ________________________________________________________________________________________________________________________________________________________
-##### this is solution  of ex :2 :
+### this is solution  of ex :2 :
 
 ### link : https://pgexercises.com/questions/basic/selectall.html
 solution select * from cd.facilities;
@@ -119,7 +117,7 @@ solution : select memid, surname, firstname, joindate from cd.members where join
 solution :select distinct surname from cd.members order by surname limit 10;
 
 
-###link : https://pgexercises.com/questions/basic/union.html
+### link : https://pgexercises.com/questions/basic/union.html
 solution : select surname from cd.members union select name from cd.facilities;
  
 ### link : https://pgexercises.com/questions/basic/agg.html 
