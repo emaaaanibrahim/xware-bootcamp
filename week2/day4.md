@@ -1,7 +1,7 @@
 # Exercise 1
 ### Try To Normalize Student, Professor Table in College Management System. How de we do that? 
 
-create table grade_student (
+create table grade_student(
 
    id serial primary key ,
    age varchar(50)  ,
@@ -116,6 +116,7 @@ id | age | professor_id
 ```sql
 alter table professor  drop column age ; 
 ```
+
 ``sql
 select * from professor;
 ```
@@ -132,6 +133,7 @@ id | name  |                   image                    | faculty_id | departmen
  16 | soad  | \x2f686f6d652f656d616e2f54656d706c61746573 |          1 |             2
  17 | salwa | \x2f686f6d652f656d616e2f54656d706c61746573 |          1 |             1
 (8 rows)
+
 ```
 
 ```sql
@@ -154,16 +156,19 @@ id | name  |                   image                    | faculty_id | departmen
 
 _________________________________________________________________________________________________________________________________________________________
 
+# Exercise 2
+
+### You Are Required To Solve This Problem:
 
 create table person (
 
   id serial primary key ,
   firstname varchar(50) ,
   lastname varchar(50) 
+
 );
 
 create table address (
-
    id serial primary key ,
    city varchar(50)  ,
    state varchar (50) ,
