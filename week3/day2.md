@@ -105,7 +105,7 @@ ________________________________________________________________________________
 
 1.  Write a MongoDB query to display all the documents in the collection restaurants.
 
-``sql 
+```sql 
 db.restaurants.find();
 ```
 
