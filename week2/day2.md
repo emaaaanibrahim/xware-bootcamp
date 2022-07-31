@@ -1,7 +1,7 @@
-# day2
+# Day2
 
-## this is solution for ex:1
-### creating tables of college_management_system database
+## This is solution for ex:1
+### Creating tables of college_management_system database
 
 create table if not exists faculty (
 
@@ -103,7 +103,9 @@ ________________________________________________________________________________
 ### this is solution  of ex :2 :
 
 ### link : https://pgexercises.com/questions/basic/selectall.html
-solution select * from cd.facilities;
+solution ```sql 
+select * from cd.facilities;
+```
 
 ### link : https://pgexercises.com/questions/basic/selectspecific.html
 solution  select name, membercost from cd.facilities;
