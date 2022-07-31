@@ -1,5 +1,6 @@
 
-# ex:1
+# This is solution  of ex :1
+
 
 ### How connect Mongo Compass to MongoDB
 ```sql
@@ -48,7 +49,8 @@ db.notification.find ([
 ```
 _________________________________________________________________________________________________________________________________________________________
 
-# ex: 2
+# This is solution  of ex :2 :
+
 
 ### Retrieve Specific Professor (Choose Anyone) Notifications
 
