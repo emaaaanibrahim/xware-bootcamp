@@ -100,7 +100,7 @@ create table if not exists course_enrollment (
 );	
 
 ________________________________________________________________________________________________________________________________________________________
-### this is solution  of ex :2 :
+## This is solution  of ex :2 :
 
 ### link : https://pgexercises.com/questions/basic/selectall.html
 solution : ```sql 
