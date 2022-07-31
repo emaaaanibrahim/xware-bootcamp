@@ -1,6 +1,7 @@
 # Exercise 1
 ### Try To Normalize Student, Professor Table in College Management System. How de we do that? 
 
+```
 create table grade_student (
 
    id serial primary key ,
@@ -9,7 +10,7 @@ create table grade_student (
    student_id int references student(id) 
 
 );
-
+```
 
 
 ```sql
