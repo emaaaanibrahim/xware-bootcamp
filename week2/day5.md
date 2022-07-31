@@ -59,6 +59,6 @@ db.messages.find({sender: {id: 1},reciver:{id:1}})
  db.notification.updateOne({ is_read: {name:'ok'} , $set: { is_read : {name: null }} })
 
 
-## ALL OF THE ABOVE HAVE NO RESULTS
+#### ALL THE EX:2 HAS NO RESULTS
 
 
