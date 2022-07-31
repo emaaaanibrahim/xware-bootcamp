@@ -103,28 +103,34 @@ ________________________________________________________________________________
 ### this is solution  of ex :2 :
 
 ### link : https://pgexercises.com/questions/basic/selectall.html
-solution ```sql 
-select * from cd.facilities;
-```
+solution : ```sql 
+select * from cd.facilities;```
 
 ### link : https://pgexercises.com/questions/basic/selectspecific.html
-solution  select name, membercost from cd.facilities;
+solution : ```sql
+select name, membercost from cd.facilities;```
 
 ### link  : https://pgexercises.com/questions/basic/where.html
-solution select facid, name, membercost, guestcost, initialoutlay, monthlymaintenance from cd.facilities where membercost>0;
+solution ```sql
+select facid, name, membercost, guestcost, initialoutlay, monthlymaintenance from cd.facilities where membercost>0;```
  
 ### link : https://pgexercises.com/questions/basic/where4.html
-solution select * from cd.facilities where facid in (1,5);  
+solution ```sql
+select * from cd.facilities where facid in (1,5);```  
 
 ### link : https://pgexercises.com/questions/basic/date.html
-solution : select memid, surname, firstname, joindate from cd.members where joindate > '2012-08-29';
+solution : ```sql
+select memid, surname, firstname, joindate from cd.members where joindate > '2012-08-29';```
 
 ### link : https://pgexercises.com/questions/basic/unique.html
-solution :select distinct surname from cd.members order by surname limit 10;
+solution :```sql
+select distinct surname from cd.members order by surname limit 10;```
 
 
 ### link : https://pgexercises.com/questions/basic/union.html
-solution : select surname from cd.members union select name from cd.facilities;
+solution : ```sql 
+select surname from cd.members union select name from cd.facilities;```
  
 ### link : https://pgexercises.com/questions/basic/agg.html 
-solution : select max(joindate) as latest from cd.members;
+solution : ```sql
+select max(joindate) as latest from cd.members;```
