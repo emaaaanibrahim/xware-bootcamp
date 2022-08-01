@@ -26,7 +26,7 @@ for i in range (number_of_professor):
         pro_info.append([name,age,salary,department])
 
         
-        professor=dictionary()
+        professor=p()
         professor[id]=pro_info
 
 number_of_students=int(input('Please Enter students Number:'))
@@ -39,7 +39,7 @@ for i in range (number_of_students):
         phone = int (input("enter phone of the student " + str (i+1) + " : "))
         stu_info.append([name,age,faculty,phone])
 
-        student=dictionary()
+        student=st()
         student[id]=stu_info
 
 
@@ -52,7 +52,7 @@ for i in range (number_of_sybjects):
         code = int (input("enter code of the sybject " + str (i+1) + " : "))
         sub_info.append([name,code,department])
 
-        sybjects=dictionary()
+        sybjects=s()
         sybjects[id]=sub_info
 
 
@@ -68,7 +68,7 @@ for i in range (number_of_courses):
         cors_info.append([name,professor,subject,student,duration])
 
 
-        courses=dictionary()
+        courses=c()
         courses[id]=cors_info
 
         
@@ -83,12 +83,13 @@ for i in range (number_of_exams):
         ex_info.append([date,time,duration])
 
 
-        exams=dictionary()
+        exams=e()
         exams[id]=ex_info
 
 
 
 
+print (professor.keys())
 
 print('\n XWARE BOOT CAMP')
 ```
