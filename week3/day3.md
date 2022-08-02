@@ -1,3 +1,5 @@
+
+```
 import code
 
 
@@ -95,3 +97,6 @@ print('courses_info : NAME , PROFESSOR, SUBJECT , STUDENT ,DURATION')
 print(cors_info)
 print('exams_info : DATE , TIME , DURATION ')
 print(ex_info)
+
+
+```
