@@ -1,6 +1,3 @@
-
-
-```
 import code
 
 
@@ -17,6 +14,7 @@ for i in range (number_of_department):
 
 number_of_professor=int(input('Please Enter Professor Number:'))
 pro_info =[]
+
 for i in range (number_of_professor):
         id = input("enter the id of the Professor " + str (i+1) + " : ")
         name = input("enter name of the Professor "+ str (i+1) + " : ")
@@ -25,8 +23,8 @@ for i in range (number_of_professor):
         age = int (input("enter age of the Professor " + str (i+1) + " : "))
         pro_info.append([name,age,salary,department])
 
-       
-       
+        # professor=p()
+        # professor[id]=pro_info
 
 number_of_students=int(input('Please Enter students Number:'))
 stu_info =[]
@@ -38,7 +36,9 @@ for i in range (number_of_students):
         phone = int (input("enter phone of the student " + str (i+1) + " : "))
         stu_info.append([name,age,faculty,phone])
 
-       
+        # student=dictionary()
+        # student[id]=stu_info
+
 
 number_of_sybjects=int(input('Please Enter subjects Number:'))
 sub_info =[]
@@ -49,7 +49,8 @@ for i in range (number_of_sybjects):
         code = int (input("enter code of the sybject " + str (i+1) + " : "))
         sub_info.append([name,code,department])
 
-        
+        # sybjects=dictionary()
+        # sybjects[id]=sub_info
 
 
 number_of_courses=int(input('Please Enter courses Number:'))
@@ -64,7 +65,9 @@ for i in range (number_of_courses):
         cors_info.append([name,professor,subject,student,duration])
 
 
-       
+#         # courses=dictionary()
+#         # courses[id]=cors_info
+
         
 
 number_of_exams=int(input('Please Enter courses Number:'))
@@ -77,11 +80,18 @@ for i in range (number_of_exams):
         ex_info.append([date,time,duration])
 
 
-       
+        # exams=dictionary()
+        # exams[id]=ex_info
 
 
 
-
-
-print('\n XWARE BOOT CAMP')
-```
+print('professor_info : NAME , AGE , SALARY , DEPARTMENT ')
+print(pro_info)
+print('student_info : NAME , AGE ,PHONE , FACULTY ')
+print(stu_info)
+print('subject_info : NAME ,DEPARTMENT , CODE ')
+print(sub_info)
+print('courses_info : NAME , PROFESSOR, SUBJECT , STUDENT ,DURATION')
+print(cors_info)
+print('exams_info : DATE , TIME , DURATION ')
+print(ex_info)
