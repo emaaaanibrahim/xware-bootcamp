@@ -3,8 +3,8 @@ def professor ():
     list_pro=[]
     try :
 
-        number_of_students=int(input('Please Enter student Number:'))
-        for i in range (number_of_students):  
+        number_of_professorss=int(input('Please Enter student Number:'))
+        for i in range (number_of_professorss):  
                 pro={}
                 id = input("enter the id of the Professor " )
                 name = input("enter name of the Professor ")
@@ -18,7 +18,7 @@ def professor ():
                 pro['age']=age
 
 
-                
+
                 list_pro.append(pro)
 
 
