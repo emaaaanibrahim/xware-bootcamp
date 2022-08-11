@@ -7,7 +7,3 @@ var7 = [1,2,3,4,5]
 print(var7)
 var =2**3
 print(var)
-
-
-
- print(3 * '7')
