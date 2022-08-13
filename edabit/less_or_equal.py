@@ -1,6 +1,6 @@
 
-def less_equal (n1):
-    if n1 <=0 :
+def less_than (n1,n2):
+    if n1+n2 <=100 :
         return True
     else:
         return False
@@ -8,4 +8,6 @@ def less_equal (n1):
 
 
 num1=int(input('enter number 1 : '))
-print(less_equal(num1))
+num2=int(input('enter number 2 : '))
+
+print(less_than(num1,num2))
