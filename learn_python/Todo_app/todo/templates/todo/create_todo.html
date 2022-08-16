@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <h1>create done</h1>
+
     <title>Document</title>
 </head>
 <body>
+    {{errors}}
+    <h1>CREATE TODO</h1>
+    {% if result == 'valid' %}
+            <p> {{validation_task_user }}</p>
+            <p> {{validation_task_name }}</p>
+            <p>{{validation_task_description}}</p>
+            <p>{{validation_task_created_date}}</p>
+            <p>{{validation_task_finished_date}}</p>
+            <p>{{validation_task_task_notes}}</p>
+   
+    {% elif result == 'not valid' %}
+        <p>Not validdd</p>
+
+    {% else  %}
+        <p>no result yet</p>
+    
+    {% endif %}
+    <form method= 'post'>
+        <input type="number"  name="task_user" placeholder="please enter task user"><br> </br>
+        <input type="text" name="task_name" placeholder="please enter task name"><br> </br>
+        <input type="text" name= "task_description" placeholder="please enter task description"><br> </br>
+        <input type="date"  name="task_created_date" placeholder="please enter date"><br> </br>
+        <input type="date"  name="task_finished_date" placeholder="please enter finished date"><br> </br>
+        <input type="text"  name="task_notes" placeholder="please enter task notes"><br> </br>
+
+        <input type="submit" value="create todo !"><b></b>
+      
+
+        {% csrf_token %}
+
+    </form>
     
 </body>
 </html>

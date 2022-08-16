@@ -1,4 +1,5 @@
 import email
+from email.mime import image
 from operator import mod
 from pyexpat import model
 
@@ -8,7 +9,6 @@ from django.db import models
 class User (models.Model):
     name= models.CharField(max_length=90)
     email=models.EmailField(max_length=90)
-    age=models.IntegerField()
 
 class Tasks (models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)

@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %}
+{% block body %}
+
+{% if first_time == True %}
+<p> this is the first time u enter here </p>
+{% endif %}
+
+    <h> LIST OF USERS </h>
+    {% for user in users %}
+        {% include 'todo/print_list_users.html' %}
+
+        {% if user.user_name == 'eman' %}
+            <p> Hello eman </p>
+        {% endif %}
+    
+    {% endfor %}
+
+    
+{% endblock %}

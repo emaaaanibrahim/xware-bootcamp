@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from todo.views import *
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
         path('admin/', admin.site.urls),
@@ -24,10 +26,16 @@ urlpatterns = [
         path('todo/check/',check_todo),
         path('todo/delete/',delete_todo),
         path('todo/retrieve/',retrieve_todo),
-        path('user/', create_user),
-        path('user/update/',update_user),
-        path('user/delete/',delete_user),
-        path('user/retrieve/',retrieve_user),
-        
 
+        path('user/', Createuserview.as_view()),
+        
+        path('user/list/',Listuserview.as_view()),
+        path('user/update/',update_user),
+        path('user/delete/',Deleteuserview.as_view()),
+        path('user/retrieve/',Retrieveuserview.as_view()),
+        
+        
+        path('login/',Loginview.as_view()),
+        path('logout/',Logoutview.as_view()),
 ]
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

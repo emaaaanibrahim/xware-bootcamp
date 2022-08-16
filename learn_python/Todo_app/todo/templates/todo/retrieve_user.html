@@ -1,0 +1,11 @@
+{% extends 'todo/base.html' %}
+{% block body %}
+    
+    {% if is_user_found == True %}
+    
+        {% include 'todo/print_user.html' %}
+    
+    {% else %}
+         <p> user not found </p>
+    {% endif %}
+{% endblock %}
